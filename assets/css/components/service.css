@@ -1,0 +1,27 @@
+.service-item{
+    width: 400px;
+    box-shadow: 2px 8px 12px #ccc;
+    border-radius: 7px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.service-item:hover{
+    background-color: var(--main-color-black);
+    color: var(--main-color);
+}
+
+.service-item h4, .service-icon,.service-description{
+    text-align: center;
+}
+
+.service-item h4{
+    margin-bottom: 15px;
+}
+
+.service-icon i{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
