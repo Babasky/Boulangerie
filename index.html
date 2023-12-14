@@ -41,7 +41,7 @@
     <div id="home" class="relative">
         <img src="assets/images/home.jpg" alt="Image accueil">
         <div class="home-text absolute">
-            <h3>Bienvenu sur le site du boulanger</h3>
+            <h3 id="element"></h3>
             <a href="#" class="btn">En savoir plus</a>
         </div>
     </div>
@@ -313,6 +313,14 @@
             &copy; 2023 -La passion du pain -Tous droits réservés
         </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Bienvenu sur le site du boulanger','le pain notre passion'],
+            typeSpeed: 90,
+            loop: true
+          });
+    </script>
 </body>
 </html>
