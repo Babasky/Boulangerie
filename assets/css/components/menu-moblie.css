@@ -7,6 +7,7 @@
     z-index: 9999999999999999999;
     background-color: var(--main-color);
     color: var(--main-color-black);
+    animation: 1s linear slideInFromLeftToRight forwards;
 }
 
 

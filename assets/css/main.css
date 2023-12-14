@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 @import url('./color/color.css');
 @import url('./framework/utiles.css');
+@import url('./components/keyframes.css');
 @import url('./components/header.css');
 @import url('./components/menu-moblie.css');
 @import url('./components/home.css');
