@@ -1,13 +1,25 @@
-var menu = document.querySelector('.menu')
+var menu = document.querySelector('.menu');
+var icon = document.querySelector('header i');
+var mobile = document.querySelector('.menu-mobile');
+var navMobileItem = document.querySelectorAll('.menu-mobile ul li');
+var overlay = document.getElementById("overlay");
 
-var icon = document.querySelector('header i')
-var mobile = document.querySelector('.menu-mobile')
 
 var ToggleMenu = ()=>{
     icon.classList.toggle('fa-xmark')
     mobile.classList.toggle('none')
-    console.log('menu-mobile');
+    overlay.classList.toggle('none')
 }
 
 
 menu.onclick = ToggleMenu
+
+for (let i = 0; i < navMobileItem.length; i++) {
+    const element = navMobileItem[i];
+    element.onclick = ToggleMenu
+}
+
+overlay.onclick = ToggleMenu
+
+
+
