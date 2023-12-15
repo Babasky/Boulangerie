@@ -4,17 +4,16 @@
     top: 0;
     left: 0;
     height: 100vh;
-    z-index: 9999999999999999999;
     background-color: var(--main-color);
     color: var(--main-color-black);
+    margin-left: -100%;
     animation: 1s linear slideInFromLeftToRight forwards;
+    z-index: 9999999999999999999;
 }
 
-
-
-
-
-
+.menu-mobile.close{
+    animation: 1s linear slideOutFromRightToLeft backwards;
+}
 .menu-mobile  ul li{
     padding: 10px 15px;
 }

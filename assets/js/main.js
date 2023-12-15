@@ -7,7 +7,15 @@ var overlay = document.getElementById("overlay");
 
 var ToggleMenu = ()=>{
     icon.classList.toggle('fa-xmark')
-    mobile.classList.toggle('none')
+    if (!mobile.classList.contains('none')) {
+        mobile.classList.toggle('close')
+        setTimeout(()=>{
+            mobile.classList.toggle('none')
+            mobile.classList.toggle('close')
+        },1000)
+    }else{
+        mobile.classList.toggle('none')
+    }
     overlay.classList.toggle('none')
 }
 
